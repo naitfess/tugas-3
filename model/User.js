@@ -31,6 +31,10 @@ const User = my_db.define("users",{
   password:{
     type: Sequelize.STRING,
     allowNull: false
+  },
+  role:{
+    type: Sequelize.ENUM("ADMIN", "MEMBER"),
+    allowNull: false
   }
 })
 
